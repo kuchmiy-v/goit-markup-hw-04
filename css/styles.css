@@ -15,6 +15,7 @@
   --primary-white-color: #ffffff;
   --secondary-button-color: #f4f4fd;
   --cards-bg-color: #f4f4fd;
+  --icon-hover: #404BBF;
 }
 
 p,
@@ -150,6 +151,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* max-width: 1440px; */
 }
 .hero {
   text-align: center;
@@ -273,6 +275,43 @@ header {
   padding-bottom: 32px;
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.list {
+}
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pimary-bg-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* колір іконки */
+.team-soc-icon {
+  fill: #f4f4fd;
+}
+
+.team-soc-link:hover {
+  /* fill: var(); */
+  background-color: var(--icon-hover);
+}
+.team-soc-link:focus {
+  background-color: var(--icon-hover);
+}
+
+.link {
+}
+
+
 .card-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -293,6 +332,70 @@ header {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* Customers */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+}
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+.list {
+}
+.customer-item {
+  width: calc((100% - 120px) / 6);
+  height: 92px;
+}
+.customer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+}
+.customer-icon {
+  /* fill: none; */
+}
+
+/* hover - нвітній спосіб, також при такому способі наслідується не тільки колір, а й маржини, тінь, анімацію фонтсайз та ін.властивості*/
+.customer-link:hover {
+  border-color: var(--icon-hover);
+}
+.customer-link:hover .customer-icon {
+  fill: var(--icon-hover);
+}
+.customer-link:focus {
+  border-color: var(--icon-hover);
+}
+.customer-link:focus .customer-icon {
+  fill: var(--icon-hover);
+}
+
+/* ще один спосіб задати ховер:
+задаєм колір .customer-link, хоч він там не потрібен
+.customer-icon {
+  fill: currentColor;
+}
+.customer-link:hover {
+  border-color: var(--icon-hover);
+  color: var(--icon-hover);
+} 
+також можна задати на .customer-link не колір (самий старий, компактний і трішечки некоректний спосіб), а fill і:
+.customer-link:hover {
+  border-color: var(--icon-hover);
+  fill: var(--icon-hover);
+} */
+
+
+
 
 /* button */
 .button {
