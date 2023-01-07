@@ -15,7 +15,7 @@
   --primary-white-color: #ffffff;
   --secondary-button-color: #f4f4fd;
   --cards-bg-color: #f4f4fd;
-  --icon-hover: #404BBF;
+  --icon-hover: #404bbf;
 }
 
 p,
@@ -151,7 +151,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* max-width: 1440px; */
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero {
   text-align: center;
@@ -265,6 +266,8 @@ header {
   width: 264px;
   border: 1px solid var(--cards-bg-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* .team-member:last-child {
   margin-right: 0;
@@ -311,7 +314,6 @@ header {
 .link {
 }
 
-
 .card-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -353,7 +355,7 @@ header {
 .customer-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -394,9 +396,6 @@ header {
   fill: var(--icon-hover);
 } */
 
-
-
-
 /* button */
 .button {
   display: inline-block;
@@ -419,6 +418,15 @@ header {
   background-color: var(--accent-color);
   border: 1px solid transparent;
 }
+.button.primary:hover {
+  background-color: var(--icon-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button.primary:focus {
+  background-color: var(--icon-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* border: 1px solid var(--icon-hover); */
+}
 
 .button.secondary {
   font-family: Roboto, sans-serif;
@@ -432,7 +440,12 @@ header {
   padding-bottom: 100px;
   color: #e7e9fc;
   background-color: var(--hero-background-color);
+  /* display: flex;
+  gap: 120px; */
 }
+/* .footer .container {
+  display: flex;
+} */
 
 .footer-logo {
   margin-bottom: 16px;
@@ -443,11 +456,46 @@ header {
   line-height: 1.33;
   text-decoration: none;
 }
-
 .footer-text {
   width: 264px;
   margin-top: 16px;
   line-height: 24px;
+}
+
+.footer-soc {
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* text-align: center; */
+}
+
+.social {
+  width: 208px;
+  height: 80px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-soc-items {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-icon {
+  fill: var(--secondary-button-color);
 }
 
 /* portfolio */
@@ -473,7 +521,18 @@ header {
 .portf-btn-list .filter-btn:last-child {
   margin-right: 0;
 }
-
+.filter-btn .button:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--primary-white-color);
+  background-color: var(--icon-hover);
+}
+.filter-btn .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--primary-white-color);
+  background-color: var(--icon-hover);
+}
 /* portfolio cards */
 
 .portf-section .container {
@@ -498,6 +557,9 @@ header {
   /* background-color: var(--cards-bg-color); */
   /* margin-right: 24px;
   margin-bottom: 24px; */
+}
+.portf-projects .project-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .project-card:nth-child(3n) {
