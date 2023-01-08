@@ -16,6 +16,7 @@
   --secondary-button-color: #f4f4fd;
   --cards-bg-color: #f4f4fd;
   --icon-hover: #404bbf;
+  --icon-color: #8e8f99;
 }
 
 p,
@@ -187,12 +188,13 @@ header {
   height: 112px;
   border: 1px solid transparent;
   border-radius: 4px;
+  background-color: var(--secondary-button-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .feature-svg:hover {
-  border: 1px solid #8e8f99;
+  /* border: 1px solid #8e8f99; */
 }
 
 /* .section .section-item: {
@@ -251,6 +253,7 @@ header {
 .team-section {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: var(--secondary-button-color);
 }
 
 .team {
@@ -290,16 +293,37 @@ header {
   padding-bottom: 32px;
 }
 
+.card-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.card-text {
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card-category {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.list {
-}
+
 .team-soc-item {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 .team-soc-link {
   width: 100%;
@@ -312,7 +336,7 @@ header {
 }
 /* колір іконки */
 .team-soc-icon {
-  fill: #f4f4fd;
+  fill: var(--cards-bg-color);
 }
 
 .team-soc-link:hover {
@@ -323,43 +347,19 @@ header {
   background-color: var(--icon-hover);
 }
 
-.link {
-}
 
-.card-title {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.card-text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.card-category {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.5;
-}
 
 /* Customers */
 .customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.container {
-}
+
 .customers-list {
   display: flex;
   gap: 30px;
 }
-.list {
-}
+
 .customer-item {
   width: calc((100% - 120px) / 6);
   height: 92px;
@@ -367,20 +367,20 @@ header {
 .customer-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .customer-icon {
-  /* fill: none; */
+  fill: var(--icon-color);
 }
 
 /* hover - нвітній спосіб, також при такому способі наслідується не тільки колір, а й маржини, тінь, анімацію фонтсайз та ін.властивості*/
 .customer-link:hover {
   border-color: var(--icon-hover);
+  fill: var(--icon-hover);
 }
 .customer-link:hover .customer-icon {
   fill: var(--icon-hover);
@@ -512,6 +512,7 @@ header {
   justify-content: center;
 }
 .footer-soc-icon {
+  height: 24px;
   fill: var(--secondary-button-color);
 }
 
