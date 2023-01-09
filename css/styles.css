@@ -17,7 +17,7 @@
   --cards-bg-color: #f4f4fd;
   --icon-color: #8e8f99;
   --icon-hover: #404bbf;
-  --icon-footer-hover: #31D0AA;
+  --icon-footer-hover: #31d0aa;
 }
 
 p,
@@ -349,8 +349,6 @@ header {
   background-color: var(--icon-hover);
 }
 
-
-
 /* Customers */
 .customers {
   padding-top: 120px;
@@ -476,7 +474,6 @@ header {
   line-height: 24px;
 }
 
-
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -588,7 +585,8 @@ header {
 }
 .portf-projects .project-card:hover {
   border: 0.5px solid var(--cards-bg-color);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card:nth-child(3n) {
