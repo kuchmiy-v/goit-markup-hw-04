@@ -15,8 +15,9 @@
   --primary-white-color: #ffffff;
   --secondary-button-color: #f4f4fd;
   --cards-bg-color: #f4f4fd;
-  --icon-hover: #404bbf;
   --icon-color: #8e8f99;
+  --icon-hover: #404bbf;
+  --icon-footer-hover: #31D0AA;
 }
 
 p,
@@ -279,6 +280,7 @@ header {
 
 .team-member {
   width: 264px;
+  background-color: var(--primary-white-color);
   border: 1px solid var(--cards-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -516,6 +518,14 @@ header {
   fill: var(--secondary-button-color);
 }
 
+.footer-soc-link:hover {
+  /* fill: var(); */
+  background-color: var(--icon-footer-hover);
+}
+.footer-soc-link:focus {
+  background-color: var(--icon-footer-hover);
+}
+
 /* ------Portfolio------ */
 .portf-section {
   padding-top: 96px;
@@ -577,7 +587,8 @@ header {
   margin-bottom: 24px; */
 }
 .portf-projects .project-card:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border: 0.5px solid var(--cards-bg-color);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card:nth-child(3n) {
@@ -588,11 +599,15 @@ header {
   margin-bottom: 0;
 }
 
+.portf-card-item {
+  text-decoration: none;
+}
+
 .portf-card-descript {
   padding: 32px 16px;
   border: 1px solid var(--cards-bg-color);
 }
 
-.portf-card-item {
-  text-decoration: none;
+.portf-card-descript .section-title {
+  margin-top: 0;
 }
