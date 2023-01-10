@@ -516,7 +516,6 @@ header {
 }
 
 .footer-soc-link:hover {
-  /* fill: var(); */
   background-color: var(--icon-footer-hover);
 }
 .footer-soc-link:focus {
@@ -572,6 +571,7 @@ header {
 }
 .portf-projects .project-card {
   width: calc((100% - 48) / 3);
+  border: 0.5px solid var(--cards-bg-color);
   /* flex-basis: calc(100% / 3 - (відступ між елементами списку)); - краще задавати у %: браузер сам вирахує шир.
   задаємо правий та нижній (або лівий та верхній) маржени елементам списку і від'ємний маржин контейнуру такої ж ширини*/
   /*abo u % vid rozmiru bat'ka: width: 25%;
@@ -584,7 +584,6 @@ header {
   margin-bottom: 24px; */
 }
 .portf-projects .project-card:hover {
-  border: 0.5px solid var(--cards-bg-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
